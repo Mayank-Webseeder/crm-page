@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <div className="bg-gray-50 min-h-screen">
@@ -8,14 +10,12 @@ export default function Home() {
 
       {/* Section 1: Customer Relationship Magic */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
-       
         <div className="text-center mb-6">
           <div className="inline-block bg-gray-200 text-sm text-gray-700 py-1 px-3 rounded-full">
             <span className="font-semibold">New</span> How Pallet uses Webseeder to power their GTM →
           </div>
         </div>
 
-      
         <h1 className="text-center text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 leading-tight">
           Customer relationship magic.
         </h1>
@@ -23,7 +23,6 @@ export default function Home() {
           Powerful, flexible and data-driven, Webseeder makes it easy to build the exact CRM your business needs.
         </p>
 
-        
         <div className="flex justify-center mt-6 gap-4 flex-wrap">
           <button className="bg-black text-white py-2 px-6 rounded-md font-medium hover:bg-gray-800">
             Start for free
@@ -33,22 +32,22 @@ export default function Home() {
           </button>
         </div>
 
-       
         <div className="mt-12 flex justify-center">
           <div className="bg-white shadow-md rounded-lg overflow-hidden w-full max-w-4xl">
-            <img
+            <Image
               src="/crm.png"
               alt="CRM Preview"
+              width={800}
+              height={400}
               className="w-full h-auto object-cover"
             />
           </div>
         </div>
       </main>
 
-      {/* Section 2: A CRM Created to Be Your Own */}
+      
       <div className="bg-gray-50 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Title */}
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 text-center">
             A CRM created to be your own.
           </h2>
@@ -56,9 +55,7 @@ export default function Home() {
             Tweak anything and everything to ensure Webseeder fits your business, not the other way around.
           </p>
 
-          
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
-            {/* Feature 1 */}
             <div className="flex items-start space-x-3">
               <span className="text-blue-500 text-2xl">🔨</span>
               <div>
@@ -68,7 +65,6 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            {/* Feature 2 */}
             <div className="flex items-start space-x-3">
               <span className="text-blue-500 text-2xl">✨</span>
               <div>
@@ -78,7 +74,6 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            {/* Feature 3 */}
             <div className="flex items-start space-x-3">
               <span className="text-blue-500 text-2xl">🚀</span>
               <div>
@@ -88,7 +83,6 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            {/* Feature 4 */}
             <div className="flex items-start space-x-3">
               <span className="text-blue-500 text-2xl">📊</span>
               <div>
@@ -100,12 +94,13 @@ export default function Home() {
             </div>
           </div>
 
-         
           <div className="mt-10 flex justify-center">
             <div className="bg-white shadow-md rounded-lg overflow-hidden w-full max-w-4xl">
-              <img
+              <Image
                 src="/container.png"
                 alt="CRM Customization"
+                width={800}
+                height={400}
                 className="w-full h-auto object-cover"
               />
             </div>
@@ -117,20 +112,19 @@ export default function Home() {
       <div className="bg-gray-50 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 text-center">
-          Modeled around your data and workflows.
+            Modeled around your data and workflows.
           </h2>
           <p className="text-lg text-gray-600 text-center mt-4">
-          A CRM should go beyond deals. Webseeder is built for any business process.
+            A CRM should go beyond deals. Webseeder is built for any business process.
           </p>
 
-          
-
-          
           <div className="mt-10 flex justify-center">
             <div className="bg-white shadow-md rounded-lg overflow-hidden w-full max-w-4xl">
-              <img
+              <Image
                 src="/info.png"
                 alt="Designed for Multiplayer"
+                width={800}
+                height={400}
                 className="w-full h-auto object-cover"
               />
             </div>
@@ -141,52 +135,112 @@ export default function Home() {
       <div className="bg-gray-50 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 text-center">
-          Designed for Multiplayer.
+            Designed for Multiplayer.
           </h2>
           <p className="text-lg text-gray-600 text-center mt-4">
-          The first Truly multiplayer CRM. After all, the best work does'nt come from silos.
+            The first truly multiplayer CRM. After all, the best work doesnt come from silos.
           </p>
 
-          
-
-       
           <div className="mt-10 flex justify-center">
             <div className="bg-white shadow-md rounded-lg overflow-hidden w-full max-w-4xl">
-              <img
+              <Image
                 src="/dev.png"
                 alt="Designed for Multiplayer"
+                width={800}
+                height={400}
                 className="w-full h-auto object-cover"
               />
             </div>
           </div>
         </div>
       </div>
-      <div className="bg-gray-50 min-h-screen py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-  <h2 className="text-center text-2xl sm:text-3xl font-bold text-gray-800 mb-8">
-    Trusted by the world's leading companies
-  </h2>
-  <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6 items-center justify-center">
-    
-    <img src="/Coca Cola.png" alt="Coca Cola" className="h-12 mx-auto max-w-full" />
-    <img src="/Open AI.png" alt="OpenAI" className="h-12 mx-auto max-w-full" />
-    <img src="/Pallet.png" alt="Pallet" className="h-12 mx-auto max-w-full" />
-    <img src="/causal.png" alt="Causal" className="h-12 mx-auto max-w-full" />
-    <img src="/plain.png" alt="Plain" className="h-12 mx-auto max-w-full" />
-    <img src="/passion.png" alt="Passionfroot" className="h-12 mx-auto max-w-full" />
-    <img src="/DOPT.png" alt="Dopt" className="h-12 mx-auto max-w-full" />
-    <img src="/Hyperline.png" alt="Hyperline" className="h-12 mx-auto max-w-full" />
-    <img src="/deck.png" alt="On Deck" className="h-12 mx-auto max-w-full" />
-    <img src="/bravado.png" alt="Bravado" className="h-12 mx-auto max-w-full" />
-    <img src="/beacon.png" alt="Beacons" className="h-12 mx-auto max-w-full" />
-  </div>
-</div>
 
-    </div>
-
-     
-      
-     
+      <div className="bg-gray-50 py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-center text-2xl sm:text-3xl font-bold text-gray-800 mb-8">
+            Trusted by the world leading companies
+          </h2>
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6 items-center justify-center">
+            <Image
+              src="/Coca Cola.png"
+              alt="Coca Cola logo"
+              width={150}
+              height={50}
+              className="h-12 mx-auto max-w-full"
+            />
+            <Image
+              src="/Open AI.png"
+              alt="OpenAI logo"
+              width={150}
+              height={50}
+              className="h-12 mx-auto max-w-full"
+            />
+            <Image
+              src="/Pallet.png"
+              alt="Pallet logo"
+              width={150}
+              height={50}
+              className="h-12 mx-auto max-w-full"
+            />
+            <Image
+              src="/causal.png"
+              alt="Causal logo"
+              width={150}
+              height={50}
+              className="h-12 mx-auto max-w-full"
+            />
+            <Image
+              src="/plain.png"
+              alt="Plain logo"
+              width={150}
+              height={50}
+              className="h-12 mx-auto max-w-full"
+            />
+            <Image
+              src="/passion.png"
+              alt="Passionfroot logo"
+              width={150}
+              height={50}
+              className="h-12 mx-auto max-w-full"
+            />
+            <Image
+              src="/DOPT.png"
+              alt="Dopt logo"
+              width={150}
+              height={50}
+              className="h-12 mx-auto max-w-full"
+            />
+            <Image
+              src="/Hyperline.png"
+              alt="Hyperline logo"
+              width={150}
+              height={50}
+              className="h-12 mx-auto max-w-full"
+            />
+            <Image
+              src="/deck.png"
+              alt="On Deck logo"
+              width={150}
+              height={50}
+              className="h-12 mx-auto max-w-full"
+            />
+            <Image
+              src="/bravado.png"
+              alt="Bravado logo"
+              width={150}
+              height={50}
+              className="h-12 mx-auto max-w-full"
+            />
+            <Image
+              src="/beacon.png"
+              alt="Beacons logo"
+              width={150}
+              height={50}
+              className="h-12 mx-auto max-w-full"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
