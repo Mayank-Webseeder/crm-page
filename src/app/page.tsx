@@ -1,15 +1,20 @@
 import Image from "next/image";
+import FeaturesSection from "./FeaturesSection";
+
+
 
 export default function Home() {
+  
   return (
     <div className="bg-gray-50 min-h-screen">
-      {/* Header */}
+     
       <header className="bg-blue-500 text-white py-4">
         <div className="text-center text-xl font-bold">Header</div>
       </header>
 
-      {/* Section 1: Customer Relationship Magic */}
+      
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
+      
         <div className="text-center mb-6">
           <div className="inline-block bg-gray-200 text-sm text-gray-700 py-1 px-3 rounded-full">
             <span className="font-semibold">New</span> How Pallet uses Webseeder to power their GTM →
@@ -43,6 +48,7 @@ export default function Home() {
             />
           </div>
         </div>
+       
       </main>
 
       
@@ -241,6 +247,66 @@ export default function Home() {
           </div>
         </div>
       </div>
+      
+      <FeaturesSection  />
+      <div className="bg-gray-900 text-white min-h-screen">
+      
+      <header className="p-6 text-center">
+        <h1 className="text-4xl font-bold">Loved by Builders</h1>
+        <p className="text-lg mt-2">
+          Webseeder is the customer relationship management tool for everyone who values collaboration.
+        </p>
+      </header>
+
+     
+      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-6 py-10">
+        {[
+          { name: "Sebastian", text: "Gitto is intuitive and sleek!" },
+          { name: "Alex", text: "Great balance of flexibility and prescriptiveness." },
+          { name: "Anushka", text: "We use CRM Gitto for fundraising and recruiting!" },
+          { name: "Melissa", text: "Holy Gitto! It’s beautiful and simple." },
+          { name: "Villa", text: "A truly flexible and robust product." },
+          { name: "Fabian", text: "It feels like the Notion of CRM." },
+        ].map((testimonial, index) => (
+          <div key={index} className="bg-gray-800 p-4 rounded-lg shadow-lg">
+            <p className="italic">"{testimonial.text}"</p>
+            <p className="mt-2 text-right font-semibold">- {testimonial.name}</p>
+          </div>
+        ))}
+      </section>
+
+      {/* Call-to-Action Section */}
+      <div className="bg-blue-600 py-10 flex flex-col lg:flex-row items-center justify-between px-6 lg:px-20">
+        
+        <div className="text-center lg:text-left">
+          <h2 className="text-3xl font-bold">Ready to build your team’s dream CRM?</h2>
+          <div className="mt-6 space-x-4">
+            <button className="bg-white text-blue-600 px-6 py-2 rounded-md font-semibold">
+              Start for Free
+            </button>
+            <button className="bg-blue-700 text-white px-6 py-2 rounded-md font-semibold">
+              Request a Demo
+            </button>
+          </div>
+        </div>
+
+      
+        <div className="mt-6 lg:mt-0 lg:ml-8">
+          <Image
+            src="/Graphicss.png"
+            alt="Graphics Illustration"
+            width={300} 
+            height={300}
+            className="rounded-lg shadow-md"
+          />
+        </div>
+      </div>
+
+      {/* Footer Section */}
+      <footer className="bg-blue-800 text-white py-6 text-center">
+        Footer Content Goes Here
+      </footer>
+    </div>
     </div>
   );
 }
