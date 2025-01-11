@@ -63,32 +63,32 @@ export default function Home() {
     {
       title: 'Quick Actions',
       description: 'Streamline your workflow with customizable shortcuts.',
-      image: '/Quick actions.png', 
+      image: '/Quick actions.png',
     },
     {
       title: 'Automatic Enrichment',
       description: 'Update your contacts with the latest information on autopilot.',
-      image: '/Automatic enrichment.png', // Replace with your image path
+      image: '/Automatic enrichment.png',
     },
     {
       title: 'Chrome Extension',
       description: 'Stay lean with Attio’s lightweight browser extension.',
-      image: '/Chrome extension.png', // Replace with your image path
+      image: '/Chrome extension.png',
     },
     {
       title: 'Contact Analysis',
       description: 'Get deeper insights into your contacts at a single glance.',
-      image: '/Contact analysis.png', // Replace with your image path
+      image: '/Contact analysis.png',
     },
     {
       title: 'Filters',
       description: 'Streamline your workflow with customizable shortcuts.',
-      image: '/Filters.png', // Replace with your image path
+      image: '/Filters.png',
     },
     {
       title: 'Tiered Sorting',
       description: 'Update your contacts with the latest information on.',
-      image: '/Tiered Sorting.png', // Replace with your image path
+      image: '/Tiered Sorting.png',
     },
   ];
   
